@@ -163,6 +163,35 @@ const exercises = [
   ],
   functionName: "maxSubArray",
   difficulty: "medium"
+},
+{
+  name: "Max Subarray Sum With One Deletion",
+  description: (
+    <>
+      Given an array of integers <code>arr</code>, return the maximum sum of a subarray, 
+      with the option to **delete at most one element**.
+      <br />
+      <br />
+      <b>Note:</b> The subarray must be **non-empty** and can’t be empty after the deletion.
+      <br />
+      <b>Example:</b><br />
+      <code>maximumSum([1, -2, 0, 3])</code> returns <code>4</code><br />
+      Delete -2 to get [1, 0, 3], sum = 4.
+    </>
+  ),
+  starterCode: `function maximumSum(arr) {
+  // Your code here
+}`,
+  tests: [
+    { input: [[1, -2, 0, 3]], expected: 4 },
+    { input: [[1, -2, -2, 3]], expected: 3 },
+    { input: [[-1, -1, -1, -1]], expected: -1 },
+    { input: [[1, -1, 5, -3, 4]], expected: 8 },
+    { input: [[2, 1, -2, 3, -5, 2]], expected: 6 },
+    { input: [[1]], expected: 1 }
+  ],
+  functionName: "maximumSum",
+  difficulty: "hard"
 }
   
 ];
