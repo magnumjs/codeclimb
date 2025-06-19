@@ -44,6 +44,33 @@ const exercises = [
     difficulty: "easy",
   },
   {
+  name: "Best Time to Buy and Sell Stock",
+  description: (
+    <>
+      You are given an array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i<sup>th</sup></code> day.
+      <br />
+      You want to maximize your profit by choosing a **single day to buy one stock** and choosing a **different day in the future to sell that stock**.
+      <br />
+      Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return <code>0</code>.
+      <br /><br />
+      <b>Example:</b><br />
+      <code>maxProfit([7,1,5,3,6,4])</code> returns <code>5</code> (buy at 1, sell at 6)
+    </>
+  ),
+  starterCode: `function maxProfit(prices) {
+  // Your code here
+}`,
+  tests: [
+    { input: [[7, 1, 5, 3, 6, 4]], expected: 5 },
+    { input: [[7, 6, 4, 3, 1]], expected: 0 },
+    { input: [[1, 2, 4, 2, 5, 7, 2, 4, 9, 0]], expected: 8 },
+    { input: [[2, 1, 2, 1, 0, 1, 2]], expected: 2 },
+    { input: [[2, 4, 1]], expected: 2 }
+  ],
+  functionName: "maxProfit",
+  difficulty: "easy"
+},
+  {
   name: "Valid Parentheses",
   description: (
     <>
