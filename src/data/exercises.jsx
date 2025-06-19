@@ -96,6 +96,7 @@ const exercises = [
     ],
     functionName: "mergeTwoLists",
   },
+  
 ];
 
 export default exercises;
