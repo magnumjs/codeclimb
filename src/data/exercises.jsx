@@ -71,6 +71,35 @@ const exercises = [
   difficulty: "easy"
 },
   {
+    name: "Best Time to Buy and Sell Stock II",
+    description: (
+      <>
+        You are given an integer array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i<sup>th</sup></code> day.
+        <br />
+        On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time.
+        <br />
+        However, you may buy it then sell it on the same day.
+        <br /><br />
+        Return the maximum profit you can achieve.
+        <br /><br />
+        <b>Example:</b><br />
+        <code>maxProfitII([7,1,5,3,6,4])</code> returns <code>7</code> (Buy on day 2 and sell on day 3, buy on day 4 and sell on day 5)
+      </>
+    ),
+    starterCode: `function maxProfitII(prices) {
+  // Your code here
+}`,
+    tests: [
+      { input: [[7,1,5,3,6,4]], expected: 7 },
+      { input: [[1,2,3,4,5]], expected: 4 },
+      { input: [[7,6,4,3,1]], expected: 0 },
+      { input: [[2,1,2,0,1]], expected: 2 },
+      { input: [[3,3,5,0,0,3,1,4]], expected: 8 }
+    ],
+    functionName: "maxProfitII",
+    difficulty: "medium"
+  },
+  {
   name: "Valid Parentheses",
   description: (
     <>
@@ -220,7 +249,6 @@ const exercises = [
   functionName: "maximumSum",
   difficulty: "hard"
 }
-  
 ];
 
 export default exercises;
