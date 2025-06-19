@@ -137,7 +137,33 @@ const exercises = [
     ],
     functionName: "groupAnagrams",
     difficulty: "medium",
-  }
+  },
+  {
+  name: "Maximum Subarray",
+  description: (
+    <>
+      Given an integer array <code>nums</code>, find the contiguous subarray (containing at least one number) 
+      which has the largest sum and return its sum.
+      <br />
+      <br />
+      <b>Example:</b><br />
+      <code>maxSubArray([-2,1,-3,4,-1,2,1,-5,4])</code> returns <code>6</code> because [4,-1,2,1] has the largest sum = 6.
+    </>
+  ),
+  starterCode: `function maxSubArray(nums) {
+  // Your code here
+}`,
+  tests: [
+    { input: [[-2,1,-3,4,-1,2,1,-5,4]], expected: 6 },
+    { input: [[1]], expected: 1 },
+    { input: [[5,4,-1,7,8]], expected: 23 },
+    { input: [[-1,-2,-3]], expected: -1 },
+    { input: [[1,2,3,4]], expected: 10 },
+    { input: [[-2,-1]], expected: -1 }
+  ],
+  functionName: "maxSubArray",
+  difficulty: "medium"
+}
   
 ];
 
