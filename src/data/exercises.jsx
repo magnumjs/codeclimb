@@ -14,8 +14,11 @@ const exercises = [
       { input: [[2, 7, 11, 15], 9], expected: [0, 1] },
       { input: [[3, 2, 4], 6], expected: [1, 2] },
       { input: [[3, 3], 6], expected: [0, 1] },
+      { input: [[1, 5, 3, 7], 8], expected: [0, 3] },
+      { input: [[0, 4, 3, 0], 0], expected: [0, 3] }
     ],
     functionName: "twoSum",
+    difficulty: "easy",
   },
   {
     name: "Reverse String",
@@ -34,8 +37,11 @@ const exercises = [
       { input: ["hello"], expected: "olleh" },
       { input: ["LeetCode"], expected: "edoCteeL" },
       { input: [""], expected: "" },
+      { input: ["a"], expected: "a" },
+      { input: ["ab"], expected: "ba" }
     ],
     functionName: "reverseString",
+    difficulty: "easy",
   },
   {
   name: "Valid Parentheses",
@@ -54,8 +60,11 @@ const exercises = [
     { input: ["(]"], expected: false },
     { input: ["([)]"], expected: false },
     { input: ["{[]}"], expected: true },
+    { input: ["(((())))"], expected: true },
+    { input: ["((((((("], expected: false }
   ],
   functionName: "isValid",
+  difficulty: "easy",
 },
 {
   name: "Longest Substring Without Repeating Characters",
@@ -76,8 +85,11 @@ const exercises = [
     { input: ["pwwkew"], expected: 3 },
     { input: [""], expected: 0 },
     { input: [" "], expected: 1 },
+    { input: ["dvdf"], expected: 3 },
+    { input: ["anviaj"], expected: 5 }
   ],
   functionName: "lengthOfLongestSubstring",
+  difficulty: "medium",
 },
   {
     name: "Merge Two Sorted Lists",
@@ -93,9 +105,39 @@ const exercises = [
       { input: [[1, 2, 4], [1, 3, 4]], expected: [1, 1, 2, 3, 4, 4] },
       { input: [[], []], expected: [] },
       { input: [[0], [0]], expected: [0, 0] },
+      { input: [[2, 5, 7], [1, 3, 6]], expected: [1, 2, 3, 5, 6, 7] },
+      { input: [[1], []], expected: [1] }
     ],
     functionName: "mergeTwoLists",
+    difficulty: "medium",
   },
+  {
+    name: "Group Anagrams",
+    description: (
+      <>
+        Write a function <code>groupAnagrams(strs)</code> that groups an array of strings into anagrams.
+        <br />
+        <b>Example:</b> <code>groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"])</code> should return <br />
+        <code>[["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]</code>
+        <br />
+        The order of the output and inner arrays does not matter.
+      </>
+    ),
+    starterCode: `function groupAnagrams(strs) {
+  // Your code here
+}`,
+    tests: [
+      { input: [["eat", "tea", "tan", "ate", "nat", "bat"]], expected: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]] },
+      { input: [[""]], expected: [[""]] },
+      { input: [["a"]], expected: [["a"]] },
+      { input: [["abc", "cab", "bca", "xyz", "yxz", "zxy", "foo", "ofo"]], expected: [["abc", "cab", "bca"], ["xyz", "yxz", "zxy"], ["foo", "ofo"]] },
+      { input: [["listen", "silent", "enlist", "google", "goleog"]], expected: [["listen", "silent", "enlist"], ["google", "goleog"]] },
+      { input: [["", "", ""]], expected: [["", "", ""]] },
+      { input: [["abc", "def", "ghi"]], expected: [["abc"], ["def"], ["ghi"]] }
+    ],
+    functionName: "groupAnagrams",
+    difficulty: "medium",
+  }
   
 ];
 

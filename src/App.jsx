@@ -69,7 +69,7 @@ export default function App() {
     <div className="App">
       <div className="top-bar">
         <div className="left-group">
-          <h1 className="logo">CodeClimb</h1>
+          <h1 className="logo">CodeClimb 🧗</h1>
         </div>
         <div className="right-group">
           <select
@@ -98,7 +98,28 @@ export default function App() {
           </div>
         </div>
         <div className="editor-pane">
-          <h3 style={{ textAlign: "center" }}>{exercise.name}</h3>
+          <h3 style={{ textAlign: "center" }}>
+            {exercise.name}{" "}
+            <span
+              style={{
+                fontSize: "0.8rem",
+                fontWeight: "bold",
+                padding: "2px 8px",
+                borderRadius: "12px",
+                color: "#fff",
+                backgroundColor:
+                  exercise.difficulty === "easy"
+                    ? "green"
+                    : exercise.difficulty === "medium"
+                    ? "orange"
+                    : "red",
+                marginLeft: "8px",
+                textTransform: "capitalize",
+              }}
+            >
+              {exercise.difficulty}
+            </span>
+          </h3>
           <CodeEditor value={code} onChange={handleCodeChange} readOnly={isSubmitted} />
         </div>
         <div className="results-pane">

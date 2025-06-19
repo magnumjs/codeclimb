@@ -1,4 +1,4 @@
-# 🧗 CodeClimb
+# CodeClimb 🧗
 
 CodeClimb is a gamified LeetCode-style web app that lets users practice coding problems in a focused, test-driven environment. Featuring a built-in editor, test runner, timer, and resizable layout, it's optimized for interview prep and skill progression.
 
