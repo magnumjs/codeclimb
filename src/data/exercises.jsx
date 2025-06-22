@@ -71,6 +71,29 @@ const exercises = [
   difficulty: "easy"
 },
   {
+  name: "Valid Parentheses",
+  description: (
+    <>
+      Write a function <code>isValid(s)</code> that determines if the input string of brackets is valid.
+      A string is valid if open brackets are closed by the same type of brackets and in the correct order.
+    </>
+  ),
+  starterCode: `function isValid(s) {
+  // Your code here
+}`,
+  tests: [
+    { input: ["()"], expected: true },
+    { input: ["()[]{}"], expected: true },
+    { input: ["(]"], expected: false },
+    { input: ["([)]"], expected: false },
+    { input: ["{[]}"], expected: true },
+    { input: ["(((())))"], expected: true },
+    { input: ["((((((("], expected: false }
+  ],
+  functionName: "isValid",
+  difficulty: "easy",
+},
+  {
     name: "Best Time to Buy and Sell Stock II",
     description: (
       <>
@@ -99,29 +122,6 @@ const exercises = [
     functionName: "maxProfitII",
     difficulty: "medium"
   },
-  {
-  name: "Valid Parentheses",
-  description: (
-    <>
-      Write a function <code>isValid(s)</code> that determines if the input string of brackets is valid.
-      A string is valid if open brackets are closed by the same type of brackets and in the correct order.
-    </>
-  ),
-  starterCode: `function isValid(s) {
-  // Your code here
-}`,
-  tests: [
-    { input: ["()"], expected: true },
-    { input: ["()[]{}"], expected: true },
-    { input: ["(]"], expected: false },
-    { input: ["([)]"], expected: false },
-    { input: ["{[]}"], expected: true },
-    { input: ["(((())))"], expected: true },
-    { input: ["((((((("], expected: false }
-  ],
-  functionName: "isValid",
-  difficulty: "easy",
-},
 {
   name: "Longest Substring Without Repeating Characters",
   description: (
