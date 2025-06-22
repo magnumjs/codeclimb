@@ -17,11 +17,6 @@ CodeClimb is a gamified LeetCode-style web app that lets users practice coding p
 
 ---
 
-## 📷 UI Preview
-
-![screenshot](preview.png) <!-- Replace with your actual screenshot path -->
-
----
 
 ## 🛠️ Tech Stack
 
